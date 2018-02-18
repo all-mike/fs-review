@@ -4,9 +4,8 @@ module.exports = {
   bears: {
     get: function getBears(req, res) {
       console.log('entering getbear logic')
-      let temp = ''
       db.Bear.find({}, function(err, data) {
-        console.log(data)
+        // console.log(data)
         if (err) {console.log(err)}
         res.status(200).send(data);
       })
