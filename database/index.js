@@ -17,3 +17,6 @@ const BearSchema = new mongoose.Schema({
 const Bear = mongoose.model('Bear', BearSchema);
 
 module.exports = { Bear }
+
+// Uncomment to drop your db;
+// Bear.db.dropDatabase();
